@@ -2,7 +2,7 @@
 ## Con Docker y Docker Compose
 En primer lugar, debemos asegurarnos de que tenemos una instalación válida de Docker. Una vez estemos seguros de ello, utilizaremos PyCharm para trabajar en nuestro `docker-compose.yml`.
 
-## 1. docker-compose.yml
+## 1. Estructura docker-compose.yml
 
 ![Estructura del docker-compose](capturas/compose.png "docker-compose.yml")
 
@@ -16,3 +16,12 @@ Tal y como podemos apreciar en la imagen, utilizaremos la imagen Odoo 16.0. Tamb
 ![Configuración BD](capturas/db.png "Configuración BD")
 
 Rellenamos los campos necesarios con nombre de usuario y contraseña, asegurándonos de que el puerto es el correcto así como la base de datos. Podemos comprobar que la conexión es exitosa y, acto seguido, aplicar los cambios y aceptar.
+
+## 3. Configuración de Odoo
+
+Es necesario añadir una nueva base de datos a Odoo, por lo que al entrar en nuestro navegador por primera vez se nos solicitará que rellenemos los campos necesarios con la información adecuada.
+
+> [!IMPORTANT]
+> ¡Es importante recordar que debemos marcar la casilla `Demo data`.
+
+![Configuración Odoo](capturas/odoosettings.png "Configuración Odoo")
