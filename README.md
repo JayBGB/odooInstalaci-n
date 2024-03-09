@@ -8,7 +8,7 @@ En primer lugar, debemos asegurarnos de que tenemos una instalación válida de 
 
 Tal y como podemos apreciar en la imagen, utilizaremos la imagen Odoo 16.0. También se puede comprobar el cliente de bases de datos que utilizaremos, que en este caso será PostgreSQL.
 
-Si por algún motivo el puerto `5432` estuviese ocupado por otro proceso, Docker no podría utilizarlo para exponer nuestro contenedor a la base de datos a la que lo vamos a enlazar. Para solventar este problema, podemos mapear un puerto diferente en nuestro ordenador local al puerto '5432' del contenedor de PostgreSQL.
+Si por algún motivo el puerto `5432` estuviese ocupado por otro proceso, Docker no podría utilizarlo para exponer nuestro contenedor a la base de datos a la que lo vamos a enlazar. Para solventar este problema, podemos mapear un puerto diferente en nuestro ordenador local al puerto `5432` del contenedor de PostgreSQL.
 En este caso, sería tan sencillo como cambiar el actual puerto...
 
 ```
