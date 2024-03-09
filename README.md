@@ -25,3 +25,11 @@ Es necesario añadir una nueva base de datos a Odoo, por lo que al entrar en nue
 > ¡Es importante recordar que debemos marcar la casilla `Demo data`.
 
 ![Configuración Odoo](capturas/odoosettings.png "Configuración Odoo")
+
+A continuación, tras la creación de la base de datos, podremos iniciar sesión con el correo y contraseña que hemos proporcionado en el paso anterior.
+
+![Login Odoo](capturas/login.png "Login Odoo")
+
+Finalmente, tras haber iniciado sesión, nos encontraremos en el apartado `Apps` de nuestro sitio alojado en `localhost:8069`.
+
+![Apps](capturas/odooapps.png "Apps")
