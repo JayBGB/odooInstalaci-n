@@ -8,6 +8,10 @@ En primer lugar, debemos asegurarnos de que tenemos una instalación válida de 
 
 Tal y como podemos apreciar en la imagen, utilizaremos la imagen Odoo 16.0. También se puede comprobar el cliente de bases de datos que utilizaremos, que en este caso será PostgreSQL.
 
+Como se puede comprobar en la siguiente imagen, PostgreSQL está integrado en nuestro IDE, lo que nos permitiría hacer consultas desde el mismo, así como otras funciones de las que necesitásemos hacer uso.
+
+![SQL Integrado](capturas/mydb.png "SQL Integrado")
+
 ## 2. Configuración de PostgreSQL
 
 > [!IMPORTANT]
@@ -22,7 +26,7 @@ Rellenamos los campos necesarios con nombre de usuario y contraseña, aseguránd
 Es necesario añadir una nueva base de datos a Odoo, por lo que al entrar en nuestro navegador por primera vez se nos solicitará que rellenemos los campos necesarios con la información adecuada.
 
 > [!IMPORTANT]
-> ¡Es importante recordar que debemos marcar la casilla `Demo data`.
+> ¡Es importante recordar que debemos marcar la casilla `Demo data`!
 
 ![Configuración Odoo](capturas/odoosettings.png "Configuración Odoo")
 
