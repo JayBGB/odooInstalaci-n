@@ -8,9 +8,21 @@ En primer lugar, debemos asegurarnos de que tenemos una instalación válida de 
 
 Tal y como podemos apreciar en la imagen, utilizaremos la imagen Odoo 16.0. También se puede comprobar el cliente de bases de datos que utilizaremos, que en este caso será PostgreSQL.
 
-Como se puede comprobar en la siguiente imagen, PostgreSQL está integrado en nuestro IDE, lo que nos permitiría hacer consultas desde el mismo, así como otras funciones de las que necesitásemos hacer uso.
+Si por algún motivo el puerto `5432` estuviese ocupado por otro proceso, Docker no podría utilizarlo para exponer nuestro contenedor a la base de datos a la que lo vamos a enlazar. Para solventar este problema, podemos mapear un puerto diferente en nuestro ordenador local al puerto '5432' del contenedor de PostgreSQL.
+En este caso, sería tan sencillo como cambiar el actual puerto...
 
-![SQL Integrado](capturas/mydb.png "SQL Integrado")
+```
+ports:
+    - "5432:5432"
+```
+
+...por otro puerto, así:
+
+```
+ports:
+    - "5433:5432"
+```
+De esta forma, Docker utilizará el puerto `5433` de nuestro ordenador local para acceder al contenedor PostgreSQL, evitando conflictos con el puerto ocupado.
 
 ## 2. Configuración de PostgreSQL
 
@@ -20,6 +32,10 @@ Como se puede comprobar en la siguiente imagen, PostgreSQL está integrado en nu
 ![Configuración BD](capturas/db.png "Configuración BD")
 
 Rellenamos los campos necesarios con nombre de usuario y contraseña, asegurándonos de que el puerto es el correcto así como la base de datos. Podemos comprobar que la conexión es exitosa y, acto seguido, aplicar los cambios y aceptar.
+
+Como se puede comprobar en la siguiente imagen, PostgreSQL está integrado en nuestro IDE, lo que nos permitiría hacer consultas desde el mismo, así como otras funciones de las que necesitásemos hacer uso.
+
+![SQL Integrado](capturas/mydb.png "SQL Integrado")
 
 ## 3. Configuración de Odoo
 
